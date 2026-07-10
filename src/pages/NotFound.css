@@ -1,0 +1,25 @@
+.not-found {
+  padding-block: 120px;
+}
+
+.not-found__inner {
+  text-align: center;
+}
+
+.not-found__code {
+  display: block;
+  font-size: 5rem;
+  font-weight: var(--fw-extrabold);
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.not-found__inner h1 {
+  margin-top: 8px;
+  color: var(--color-text);
+}
+
+.not-found__inner p {
+  margin: 12px auto 28px;
+  max-width: 420px;
+}

@@ -1,0 +1,43 @@
+:root {
+  /* Brand colors */
+  --color-primary: #1e4f94;
+  --color-primary-dark: #163a6f;
+  --color-primary-light: #2d6fb8;
+  --color-secondary: #b8744d;
+  --color-secondary-dark: #996245;
+
+  /* Palette */
+  --color-sky: #9edcf0;
+  --color-cyan: #56c6e8;
+  --color-medical-blue: #2d6fb8;
+  --color-silver: #aeb8c2;
+  --color-steel: #596b82;
+  --color-soft-white: #f8fafc;
+  --color-emergency: #b83324;
+  --color-black: #000000;
+
+  /* Semantic */
+  --color-bg: #ffffff;
+  --color-bg-muted: var(--color-soft-white);
+  --color-text: #1c2430;
+  --color-text-muted: #5b6774;
+  --color-border: #e3e8ee;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-base: 'Manrope Variable', 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* Layout */
+  --container-width: 1280px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --shadow-sm: 0 2px 8px rgba(30, 79, 148, 0.08);
+  --shadow-md: 0 8px 24px rgba(30, 79, 148, 0.12);
+  --shadow-lg: 0 16px 40px rgba(30, 79, 148, 0.16);
+  --transition: 0.2s ease;
+}

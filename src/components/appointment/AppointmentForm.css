@@ -1,0 +1,79 @@
+.appointment-form {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.appointment-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.appointment-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.appointment-form__field label {
+  font-size: 0.85rem;
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+}
+
+.appointment-form__input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  transition: border-color var(--transition);
+}
+
+.appointment-form__input:focus-within {
+  border-color: var(--color-primary);
+}
+
+.appointment-form__input svg {
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+.appointment-form__input input,
+.appointment-form__input select {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.92rem;
+  color: var(--color-text);
+  background: transparent;
+}
+
+.appointment-form__submit {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.appointment-form--success {
+  text-align: center;
+  align-items: center;
+  gap: 12px;
+  padding: 56px 32px;
+}
+
+.appointment-form--success h3 {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 640px) {
+  .appointment-form__row {
+    grid-template-columns: 1fr;
+  }
+}

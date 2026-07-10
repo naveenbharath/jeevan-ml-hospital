@@ -1,0 +1,61 @@
+.appointment-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.appointment-section__eyebrow {
+  display: inline-block;
+  color: var(--color-secondary);
+  font-weight: var(--fw-semibold);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.appointment-section__text h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--color-primary);
+}
+
+.appointment-section__text > p {
+  margin-top: 14px;
+  font-size: 1.02rem;
+  max-width: 460px;
+}
+
+.appointment-section__text ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.appointment-section__text li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: var(--fw-semibold);
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.appointment-section__text li svg {
+  color: var(--color-white);
+  background: var(--color-primary);
+  border-radius: 50%;
+  padding: 6px;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .appointment-section__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,50 @@
+.doctors-page__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.doctors-page__filters button {
+  border: 1.5px solid var(--color-border);
+  background: var(--color-white);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: var(--fw-semibold);
+  font-size: 0.85rem;
+  color: var(--color-text);
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.doctors-page__filters button:hover {
+  border-color: var(--color-primary);
+}
+
+.doctors-page__filters button.is-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.doctors-page__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.doctors-page__empty {
+  text-align: center;
+  padding: 40px 0;
+}
+
+@media (max-width: 900px) {
+  .doctors-page__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .doctors-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
