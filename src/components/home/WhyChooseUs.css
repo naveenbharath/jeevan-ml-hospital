@@ -1,52 +1,86 @@
+.why-choose-us__card {
+  background: linear-gradient(135deg, #fdf6e3 0%, #f8e3b3 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 40px 44px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.why-choose-us__heading {
+  flex-shrink: 0;
+  max-width: 220px;
+}
+
+.why-choose-us__heading h2 {
+  font-size: 1.4rem;
+  color: var(--color-primary-dark);
+  line-height: 1.3;
+}
+
+.why-choose-us__heading .pulse-divider {
+  margin-top: 16px;
+}
+
 .why-choose-us__grid {
+  flex: 1;
+  min-width: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
-.why-choose-us__card {
-  background: var(--color-white);
-  border-radius: var(--radius-md);
-  padding: 28px 22px;
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition), box-shadow var(--transition);
+.why-choose-us__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.why-choose-us__card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+.why-choose-us__item svg {
+  color: var(--color-primary);
 }
 
-.why-choose-us__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: rgba(184, 116, 77, 0.12);
-  color: var(--color-secondary);
-  margin-bottom: 16px;
+.why-choose-us__item h3 {
+  font-size: 0.9rem;
+  color: var(--color-text);
 }
 
-.why-choose-us__card h3 {
-  font-size: 0.98rem;
-  margin-bottom: 8px;
-}
-
-.why-choose-us__card p {
-  font-size: 0.85rem;
+.why-choose-us__item p {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
 }
 
 @media (max-width: 1100px) {
+  .why-choose-us__card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .why-choose-us__heading {
+    max-width: none;
+  }
+
   .why-choose-us__grid {
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 640px) {
+  .why-choose-us__card {
+    padding: 28px 20px;
+  }
+
   .why-choose-us__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .why-choose-us__grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -65,7 +65,7 @@ function Header() {
           </nav>
 
           <div className="navbar__actions">
-            <Button to="/contact#book-appointment" variant="primary" size="sm">
+            <Button to="/contact#book-appointment" variant="accent" size="sm">
               Book Appointment
             </Button>
             <button
@@ -103,7 +103,7 @@ function Header() {
               </li>
             ))}
           </ul>
-          <Button to="/contact#book-appointment" variant="primary" onClick={() => setMenuOpen(false)}>
+          <Button to="/contact#book-appointment" variant="accent" onClick={() => setMenuOpen(false)}>
             Book Appointment
           </Button>
         </nav>

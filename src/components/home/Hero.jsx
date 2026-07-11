@@ -1,4 +1,4 @@
-import { Siren, Users, Activity, HeartHandshake, Building2 } from 'lucide-react'
+import { Siren, Users, Activity, HeartHandshake } from 'lucide-react'
 import Button from '../common/Button.jsx'
 import { heroHighlights } from '../../data/whyChooseUs.js'
 import './Hero.css'
@@ -42,7 +42,7 @@ function Hero() {
 
         <div className="hero__media" aria-hidden="true">
           <div className="hero__media-frame">
-            <Building2 size={96} strokeWidth={1.4} />
+            <img src="/hospitalImg.png" alt="" className="hero__media-img" />
           </div>
           <div className="hero__media-badge">
             <HeartHandshake size={28} />

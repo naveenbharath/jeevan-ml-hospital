@@ -78,9 +78,22 @@
   transition: color var(--transition);
 }
 
-.navbar__nav a:hover,
-.navbar__nav a.active {
+.navbar__nav a:hover {
   color: var(--color-primary);
+}
+
+.navbar__nav .dropdown a.active {
+  color: var(--color-primary);
+}
+
+.navbar__nav > ul > li > a {
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.navbar__nav > ul > li > a.active {
+  color: #f5ac04;
+  border-bottom-color: #f5ac04;
 }
 
 .navbar__nav .dropdown {

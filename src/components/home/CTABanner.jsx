@@ -13,7 +13,7 @@ function CTABanner() {
           <h2>World-class care. Right here for you.</h2>
           <p>Book your appointment today and take the first step towards better health.</p>
         </div>
-        <Button to="/contact#book-appointment" variant="secondary" size="lg">
+        <Button to="/contact#book-appointment" variant="accent" size="lg">
           Book Appointment
         </Button>
       </div>
