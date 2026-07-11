@@ -2,6 +2,21 @@
   background: linear-gradient(120deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: var(--color-white);
   padding-block: 48px;
+  margin: 0 4px 3px;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 1024px) {
+  .cta-banner {
+    margin-inline: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-banner {
+    margin-inline: 16px;
+    border-radius: var(--radius-md);
+  }
 }
 
 .cta-banner__inner {

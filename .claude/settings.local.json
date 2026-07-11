@@ -12,7 +12,11 @@
       "Bash(node -e \"require.resolve\\('playwright'\\)\")",
       "Bash(node find-overflow.js)",
       "Bash(node small-widths.js)",
-      "Bash(node responsive-audit.js)"
+      "Bash(node responsive-audit.js)",
+      "Bash(pip3 install *)",
+      "Bash(npm init *)",
+      "Read(//tmp/**)",
+      "Read(//Users/naveenbharath/Library/Caches/ms-playwright/**)"
     ]
   }
 }
