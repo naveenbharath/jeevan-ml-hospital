@@ -27,9 +27,14 @@
 }
 
 .doctors-page__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
+}
+
+.doctors-page__grid > * {
+  flex: 0 1 240px;
 }
 
 .doctors-page__empty {
@@ -37,14 +42,8 @@
   padding: 40px 0;
 }
 
-@media (max-width: 900px) {
-  .doctors-page__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .doctors-page__grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 480px) {
+  .doctors-page__grid > * {
+    flex: 1 1 calc(50% - 24px);
   }
 }

@@ -1,21 +1,12 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Salad, Sun, Dumbbell, Moon } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import './ArticleCard.css'
 
-const icons = {
-  Nutrition: Salad,
-  Lifestyle: Sun,
-  Fitness: Dumbbell,
-  Wellness: Moon,
-}
-
 function ArticleCard({ article }) {
-  const Icon = icons[article.category] ?? Sun
-
   return (
     <article id={article.id} className="article-card">
-      <div className="article-card__media" aria-hidden="true">
-        <Icon size={36} />
+      <div className="article-card__media">
+        <img src={article.image} alt={article.title} loading="lazy" />
       </div>
       <div className="article-card__body">
         <span className="article-card__category">{article.category}</span>
