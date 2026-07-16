@@ -13,7 +13,7 @@ function HealthGuideSection({ limit }) {
           title="Compassionate Healthcare for a Better Life"
           description="Tips, insights and guidance for a healthier you and your family."
           align="left"
-          viewAllTo={limit ? '/health-guide' : undefined}
+          viewAllTo={limit && healthArticles.length > limit ? '/health-guide' : undefined}
         />
         <div className="health-guide-section__grid">
           {list.map((article) => (

@@ -68,15 +68,7 @@ p {
 
 .container {
   width: 100%;
-  max-width: var(--container-width);
-  margin-inline: auto;
-  padding-inline: 24px;
-}
-
-@media (max-width: 640px) {
-  .container {
-    padding-inline: 16px;
-  }
+  padding-inline: 28px;
 }
 
 .section {
@@ -91,6 +83,10 @@ p {
 
 .section--muted {
   background: var(--color-bg-muted);
+}
+
+.wide-bleed {
+  margin-inline: 28px;
 }
 
 .visually-hidden {

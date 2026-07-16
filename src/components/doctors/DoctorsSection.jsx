@@ -9,7 +9,11 @@ function DoctorsSection({ limit }) {
   return (
     <section className="doctors-section section section--muted">
       <div className="container">
-        <SectionHeading title="Our Doctors" align="center" viewAllTo={limit ? '/doctors' : undefined} />
+        <SectionHeading
+          title="Our Doctors"
+          align="center"
+          viewAllTo={limit && doctors.length > limit ? '/doctors' : undefined}
+        />
         <div className="doctors-section__grid">
           {list.map((doctor) => (
             <DoctorCard key={doctor.id} doctor={doctor} />

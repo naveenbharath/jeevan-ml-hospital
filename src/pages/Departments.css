@@ -1,17 +1,16 @@
 .departments-page__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
-@media (max-width: 900px) {
-  .departments-page__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.departments-page__grid > * {
+  flex: 0 1 340px;
 }
 
 @media (max-width: 560px) {
-  .departments-page__grid {
-    grid-template-columns: 1fr;
+  .departments-page__grid > * {
+    flex: 1 1 100%;
   }
 }

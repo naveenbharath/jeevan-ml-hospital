@@ -1,17 +1,16 @@
 .doctors-section__grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
-@media (max-width: 1100px) {
-  .doctors-section__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.doctors-section__grid > * {
+  flex: 0 1 220px;
 }
 
-@media (max-width: 640px) {
-  .doctors-section__grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 480px) {
+  .doctors-section__grid > * {
+    flex: 1 1 calc(50% - 20px);
   }
 }

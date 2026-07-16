@@ -9,7 +9,11 @@ function DepartmentsSection({ limit, compact = true }) {
   return (
     <section className="departments-section section">
       <div className="container">
-        <SectionHeading title="Our Departments" align="center" viewAllTo={limit ? '/departments' : undefined} />
+        <SectionHeading
+          title="Our Departments"
+          align="center"
+          viewAllTo={limit && departments.length > limit ? '/departments' : undefined}
+        />
         <div className="departments-section__grid">
           {list.map((department) => (
             <DepartmentCard key={department.id} department={department} compact={compact} />

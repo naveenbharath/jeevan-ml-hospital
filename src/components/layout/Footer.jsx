@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Phone, Mail, MapPin, Navigation } from 'lucide-react'
 import Logo from '../common/Logo.jsx'
 import { FacebookIcon, InstagramIcon, TwitterIcon, LinkedinIcon } from '../common/SocialIcons.jsx'
-import { topBarLinks } from '../../data/navLinks.js'
+import { topBarLinks, mapLocation } from '../../data/navLinks.js'
 import { departments } from '../../data/departments.js'
 import './Footer.css'
 
@@ -34,7 +34,7 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="container footer__top">
+      <div className="footer__top">
         <div className="footer__col footer__brand">
           <Logo variant="dark" />
           <p>
@@ -88,7 +88,7 @@ function Footer() {
           <ul className="footer__contact">
             <li>
               <MapPin size={16} />
-              <span>{topBarLinks.address}</span>
+              <a href="#location-map">{topBarLinks.address}</a>
             </li>
             <li>
               <Phone size={16} />
@@ -102,8 +102,29 @@ function Footer() {
         </div>
       </div>
 
+      <div className="footer__map" id="location-map">
+        <div className="footer__map-inner">
+          <div className="footer__map-heading">
+            <h3>Find Us on the Map</h3>
+            <a href={mapLocation.directionsUrl} target="_blank" rel="noreferrer" className="footer__map-directions">
+              <Navigation size={15} />
+              Get Directions
+            </a>
+          </div>
+          <div className="footer__map-frame">
+            <iframe
+              src={mapLocation.embedUrl}
+              title="Jeevan Multispeciality Hospital location"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </div>
+
       <div className="footer__bottom">
-        <div className="container footer__bottom-inner">
+        <div className="footer__bottom-inner">
           <p>© {year} Jeevan Multispeciality Hospital. All Rights Reserved.</p>
           <div className="footer__legal">
             <Link to="/contact">Privacy Policy</Link>
