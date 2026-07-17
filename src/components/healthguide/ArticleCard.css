@@ -15,7 +15,7 @@
 }
 
 .article-card__media {
-  height: 160px;
+  height: 180px;
   overflow: hidden;
   background: var(--color-bg-muted);
 }

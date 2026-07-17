@@ -2,11 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
 }
 
 .departments-section__grid > * {
-  flex: 0 1 280px;
+  flex: 0 1 340px;
 }
 
 @media (max-width: 480px) {

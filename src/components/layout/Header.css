@@ -13,9 +13,8 @@
 
 .topbar__inner {
   width: 100%;
-  max-width: 1280px;
   margin-inline: auto;
-  padding-inline: 24px;
+  padding-inline: 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,13 +26,6 @@
   .topbar__inner {
     padding-inline: 16px;
   }
-}
-
-.topbar__contacts {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
 }
 
 .topbar__item {
@@ -60,14 +52,12 @@
 
 .navbar__inner {
   width: 100%;
-  max-width: 1280px;
   margin-inline: auto;
-  padding-inline: 24px;
+  padding-inline: 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding-block: 12px;
 }
 
 @media (max-width: 640px) {

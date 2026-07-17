@@ -20,20 +20,18 @@ function Header() {
     <header className="header">
       <div className="topbar">
         <div className="topbar__inner">
-          <div className="topbar__contacts">
-            <a href={`tel:${topBarLinks.phone.replace(/\s/g, '')}`} className="topbar__item">
-              <Phone size={14} />
-              {topBarLinks.phone}
-            </a>
-            <a href={`mailto:${topBarLinks.email}`} className="topbar__item topbar__item--hide-sm">
-              <Mail size={14} />
-              {topBarLinks.email}
-            </a>
-            <a href="#location-map" className="topbar__item topbar__item--hide-md">
-              <MapPin size={14} />
-              {topBarLinks.address}
-            </a>
-          </div>
+          <a href={`tel:${topBarLinks.phone.replace(/\s/g, '')}`} className="topbar__item">
+            <Phone size={14} />
+            {topBarLinks.phone}
+          </a>
+          <a href={`mailto:${topBarLinks.email}`} className="topbar__item topbar__item--hide-sm">
+            <Mail size={14} />
+            {topBarLinks.email}
+          </a>
+          <a href="#location-map" className="topbar__item topbar__item--hide-md">
+            <MapPin size={14} />
+            {topBarLinks.address}
+          </a>
           <div className="topbar__emergency">24/7 Emergency</div>
         </div>
       </div>
