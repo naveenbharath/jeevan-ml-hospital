@@ -3,7 +3,7 @@ import DepartmentCard from './DepartmentCard.jsx'
 import { departments } from '../../data/departments.js'
 import './DepartmentsSection.css'
 
-function DepartmentsSection({ limit, compact = true }) {
+function DepartmentsSection({ limit, compact = false }) {
   const list = limit ? departments.slice(0, limit) : departments
 
   return (

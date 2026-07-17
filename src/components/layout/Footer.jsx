@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin, Navigation } from 'lucide-react'
+import { Phone, Mail, MapPin } from 'lucide-react'
 import Logo from '../common/Logo.jsx'
 import { FacebookIcon, InstagramIcon, TwitterIcon, LinkedinIcon } from '../common/SocialIcons.jsx'
 import { topBarLinks, mapLocation } from '../../data/navLinks.js'
@@ -72,6 +72,19 @@ function Footer() {
           </ul>
         </div>
 
+        <div className="footer__col footer__map-col" id="location-map">
+          <h3>Find Us</h3>
+          <div className="footer__map-frame">
+            <iframe
+              src={mapLocation.embedUrl}
+              title="Jeevan Multispeciality Hospital location"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
         <div className="footer__col">
           <h3>Departments</h3>
           <ul>
@@ -99,27 +112,6 @@ function Footer() {
               <a href={`mailto:${topBarLinks.email}`}>{topBarLinks.email}</a>
             </li>
           </ul>
-        </div>
-      </div>
-
-      <div className="footer__map" id="location-map">
-        <div className="footer__map-inner">
-          <div className="footer__map-heading">
-            <h3>Find Us on the Map</h3>
-            <a href={mapLocation.directionsUrl} target="_blank" rel="noreferrer" className="footer__map-directions">
-              <Navigation size={15} />
-              Get Directions
-            </a>
-          </div>
-          <div className="footer__map-frame">
-            <iframe
-              src={mapLocation.embedUrl}
-              title="Jeevan Multispeciality Hospital location"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
-          </div>
         </div>
       </div>
 
