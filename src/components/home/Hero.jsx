@@ -15,8 +15,9 @@ function HeroContent() {
         Advanced Excellence.
       </h1>
       <p>
-        At Jeevan Multispeciality Hospital, we are committed to providing world-class
-        healthcare with compassion, innovation and integrity.
+        Jeevan Multispeciality Hospital is committed to providing world-class healthcare to
+        Thanjavur, Tanjore, Mayiladuthurai and the surrounding Tamil Nadu region with
+        compassion, innovation and integrity.
       </p>
       <div className="hero__cta">
         <Button to="/contact#book-appointment" variant="primary" size="lg">
@@ -48,8 +49,8 @@ function Hero() {
     return (
       <section className="hero hero--mobile">
         <img
-          src="/hero-banner-mobile.png"
-          alt="Jeevan Multispeciality Hospital building with ambulances"
+          src="/hero-banner-mobile.jpg"
+          alt="Jeevan Multispeciality Hospital building in Thanjavur (Tanjore) with 24 hours emergency ambulances"
           className="hero__mobile-img"
         />
         <div className="container">

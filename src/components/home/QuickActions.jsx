@@ -12,7 +12,7 @@ function QuickActions() {
           </span>
           <span className="quick-actions__text">
             <strong>Emergency Care</strong>
-            <span>24/7 Emergency Services. Immediate care when you need it most.</span>
+            <span>24 hours emergency medical care in Thanjavur and Tanjore. Immediate help when you need it most.</span>
           </span>
           <ArrowRight size={20} className="quick-actions__arrow" />
         </Link>
