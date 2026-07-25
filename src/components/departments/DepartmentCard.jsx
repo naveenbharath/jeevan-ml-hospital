@@ -28,7 +28,11 @@ function DepartmentCard({ department, compact = false }) {
     <Link to={`/departments#${department.id}`} id={department.id} className="department-card">
       {department.image && (
         <span className="department-card__media">
-          <img src={department.image} alt={department.name} loading="lazy" />
+          <img
+            src={department.image}
+            alt={`${department.name} department at Jeevan Multispeciality Hospital, Thanjavur`}
+            loading="lazy"
+          />
         </span>
       )}
       <span className="department-card__body">

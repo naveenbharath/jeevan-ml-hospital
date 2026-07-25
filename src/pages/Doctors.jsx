@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import SEO from '../components/common/SEO.jsx'
 import PageHero from '../components/common/PageHero.jsx'
 import DoctorCard from '../components/doctors/DoctorCard.jsx'
 import CTABanner from '../components/home/CTABanner.jsx'
@@ -16,9 +17,14 @@ function Doctors() {
 
   return (
     <>
+      <SEO
+        title="Our Doctors | Orthopedic & Gynaecology Specialists in Thanjavur"
+        description="Meet the experienced orthopedic surgeons and gynaecologists at Jeevan Multispeciality Hospital, serving Thanjavur, Tanjore and Mayiladuthurai with board-certified specialist care."
+        keywords="Doctors in Thanjavur, Orthopedic doctors Thanjavur, Gynaecologist in Tanjore, Jeevan Hospital doctors"
+      />
       <PageHero
         title="Our Doctors"
-        description="Meet our team of experienced, board-certified specialists dedicated to your wellbeing."
+        description="Meet our team of experienced, board-certified specialists dedicated to your wellbeing in Thanjavur and Tanjore."
       />
 
       <section className="section">

@@ -1,4 +1,5 @@
 import { Siren, ScanLine, Pill, ClipboardCheck, Activity, FileCheck2 } from 'lucide-react'
+import SEO from '../components/common/SEO.jsx'
 import PageHero from '../components/common/PageHero.jsx'
 import CTABanner from '../components/home/CTABanner.jsx'
 import { services } from '../data/services.js'
@@ -9,9 +10,14 @@ const icons = { Siren, ScanLine, Pill, ClipboardCheck, Activity, FileCheck2 }
 function Services() {
   return (
     <>
+      <SEO
+        title="Medical Services | Jeevan Multispeciality Hospital Thanjavur"
+        description="24 hours emergency care, diagnostics, pharmacy, ICU and health checkups — explore healthcare services in Thanjavur at Jeevan Multispeciality Hospital, Tamil Nadu."
+        keywords="Emergency Hospital in Thanjavur, 24 Hours Hospital in Thanjavur, Healthcare Services in Thanjavur, General Hospital in Thanjavur"
+      />
       <PageHero
         title="Our Services"
-        description="From emergency response to preventive care, everything you need for a healthier life."
+        description="From 24 hours emergency response to preventive care, comprehensive healthcare services in Thanjavur and Tanjore for a healthier life."
       />
 
       <section className="section">
@@ -19,13 +25,13 @@ function Services() {
           {services.map((service) => {
             const Icon = icons[service.icon]
             return (
-              <div key={service.id} id={service.id} className="services-page__card">
+              <article key={service.id} id={service.id} className="services-page__card">
                 <span className="services-page__icon">
                   <Icon size={28} />
                 </span>
                 <h3>{service.name}</h3>
                 <p>{service.description}</p>
-              </div>
+              </article>
             )
           })}
         </div>

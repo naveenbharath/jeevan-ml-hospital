@@ -1,4 +1,5 @@
 import { ShieldCheck, HeartHandshake, Award, Users } from 'lucide-react'
+import SEO from '../components/common/SEO.jsx'
 import PageHero from '../components/common/PageHero.jsx'
 import WhyChooseUs from '../components/home/WhyChooseUs.jsx'
 import CTABanner from '../components/home/CTABanner.jsx'
@@ -14,9 +15,14 @@ const stats = [
 function About() {
   return (
     <>
+      <SEO
+        title="About Jeevan Multispeciality Hospital - Trusted Healthcare in Thanjavur"
+        description="Learn about Jeevan Multispeciality Hospital, a trusted multispeciality and general hospital serving Thanjavur (Tanjore), Mayiladuthurai and Tamil Nadu with compassionate, advanced healthcare."
+        keywords="About Jeevan Multispeciality Hospital, Best Hospital in Thanjavur, General Hospital in Thanjavur, Trusted Hospital in Tanjore"
+      />
       <PageHero
         title="About Us"
-        description="Two decades of compassionate, advanced and patient-first healthcare in the heart of the city."
+        description="Two decades of compassionate, advanced and patient-first healthcare, proudly serving Thanjavur (Tanjore) and the wider Tamil Nadu region."
       />
 
       <section className="section about-story">
@@ -32,7 +38,8 @@ function About() {
             </p>
             <p>
               Today, our team of experienced specialists, modern infrastructure and round-the-clock
-              emergency care make us one of the most trusted names in healthcare in the region.
+              emergency care make us one of the most trusted general and multispeciality hospitals
+              serving Thanjavur, Tanjore, Mayiladuthurai and the wider Tamil Nadu region.
             </p>
           </div>
           <div className="about-story__stats">
