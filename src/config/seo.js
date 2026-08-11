@@ -14,7 +14,7 @@ export const ORG = {
   addressRegion: 'Tamil Nadu',
   postalCode: '609001',
   addressCountry: 'IN',
-  telephone: '+91-98765-43210',
+  telephone: '+91-938-061-0158 ',
   email: 'info@jeevanhospital.com',
   latitude: 11.1129015,
   longitude: 79.6600341,

@@ -16,7 +16,8 @@ export const navLinks = [
 ]
 
 export const topBarLinks = {
-  phone: '+91 98765 43210',
+  phone: '+91 9380610158',
+  phone1: '+91 8778187693', 
   email: 'info@jeevanhospital.com',
   address: 'Sirkali Main Road, Vellalagaram, Senthangudi, Mayiladuthurai-609001',
 }

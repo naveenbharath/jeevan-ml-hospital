@@ -103,10 +103,19 @@ function Footer() {
               <MapPin size={16} />
               <a href="#location-map">{topBarLinks.address}</a>
             </li>
-            <li>
-              <Phone size={16} />
-              <a href={`tel:${topBarLinks.phone.replace(/\s/g, '')}`}>{topBarLinks.phone}</a>
-            </li>
+           <li>
+  <Phone size={16} />
+  <a href={`tel:${topBarLinks.phone.replace(/\s/g, '')}`}>
+    Ortho: {topBarLinks.phone}
+  </a>
+</li>
+
+<li>
+  <Phone size={16} />
+  <a href={`tel:${topBarLinks.phone1.replace(/\s/g, '')}`}>
+    Gynaecologist: {topBarLinks.phone1}
+  </a>
+  </li>
             <li>
               <Mail size={16} />
               <a href={`mailto:${topBarLinks.email}`}>{topBarLinks.email}</a>
