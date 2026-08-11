@@ -4,6 +4,7 @@ import Button from '../common/Button.jsx'
 import { departments } from '../../data/departments.js'
 import './AppointmentForm.css'
 
+
 const initialState = {
   name: '',
   phone: '',
