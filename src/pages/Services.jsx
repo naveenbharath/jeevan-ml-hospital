@@ -17,7 +17,7 @@ function Services() {
       />
       <PageHero
         title="Our Services"
-        description="From 24 hours emergency response to preventive care, comprehensive healthcare services in Thanjavur and Tanjore for a healthier life."
+        description="From 24 hours emergency response to preventive care, comprehensive healthcare services in Mayiladuthurai for a healthier life."
       />
 
       <section className="section">

@@ -4,7 +4,7 @@ export const services = [
     name: 'Emergency Care',
     icon: 'Siren',
     description:
-      '24 hours emergency hospital services in Thanjavur and Tanjore, with rapid response and critical care specialists on call.',
+      '24 hours emergency hospital services in Mayiladuthurai, with rapid response and critical care specialists on call.',
   },
   {
     id: 'diagnostics',
