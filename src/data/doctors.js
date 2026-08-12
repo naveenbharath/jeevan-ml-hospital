@@ -5,6 +5,7 @@ export const doctors = [
     specialityId: 'orthopaedics',
     speciality: 'Orthopaedic Surgeon',
     experience: '18+ Years Experience',
+    phone: '+91 87781 87693'
   },
   {
     id: 'anitha-sharma',
@@ -12,5 +13,6 @@ export const doctors = [
     specialityId: 'gynaecology',
     speciality: 'Gynaecologist',
     experience: '14+ Years Experience',
+    phone: '+91 93806 10158'
   },
 ]
