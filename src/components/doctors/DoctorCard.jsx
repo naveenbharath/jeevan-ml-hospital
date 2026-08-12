@@ -21,6 +21,16 @@ function DoctorCard({ doctor }) {
       <span className="doctor-card__name">{doctor.name}</span>
       <span className="doctor-card__speciality">{doctor.speciality}</span>
       <span className="doctor-card__experience">{doctor.experience}</span>
+      <a
+        href={`tel:${doctor.phone.replace(/\s/g, '')}`}
+        className="doctor-card__phone"
+        aria-label={`Call ${doctor.phone}`}
+        style ={{fontSize :'0.8rem'}}
+      >
+        <span className="doctor-card__phone-icon">📞</span>
+        <span >{doctor.phone}</span>
+      </a>
+
     </Link>
   )
 }

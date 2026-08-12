@@ -16,11 +16,11 @@ export const navLinks = [
 ]
 
 export const topBarLinks = {
-  phone: '+91 9380610158',
-  phone1: '+91 8778187693', 
+  phone: '04364-220 105',
+  phone1: '04364-220 106',
   email: 'info@jeevanhospital.com',
   address: 'Sirkali Main Road, Vellalagaram, Senthangudi, Mayiladuthurai-609001',
-}
+};
 
 export const mapLocation = {
   lat: 11.1129015,

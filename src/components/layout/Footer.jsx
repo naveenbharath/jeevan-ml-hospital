@@ -106,14 +106,14 @@ function Footer() {
            <li>
   <Phone size={16} />
   <a href={`tel:${topBarLinks.phone.replace(/\s/g, '')}`}>
-    Ortho: {topBarLinks.phone}
+     {topBarLinks.phone}
   </a>
 </li>
 
 <li>
   <Phone size={16} />
   <a href={`tel:${topBarLinks.phone1.replace(/\s/g, '')}`}>
-    Gynaecologist: {topBarLinks.phone1}
+     {topBarLinks.phone1}
   </a>
   </li>
             <li>

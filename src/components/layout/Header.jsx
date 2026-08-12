@@ -22,12 +22,12 @@ function Header() {
         <div className="topbar__inner">
           <a href={`tel:${topBarLinks.phone.replace(/\s/g, '')}`} className="topbar__item">
   <Phone size={14} />
-  Ortho: {topBarLinks.phone}
+   {topBarLinks.phone}
 </a>
 
 <a href={`tel:${topBarLinks.phone1.replace(/\s/g, '')}`} className="topbar__item">
   <Phone size={14} />
-  Gynaecologist: {topBarLinks.phone1}
+  {topBarLinks.phone1}
 </a>
           <a href={`mailto:${topBarLinks.email}`} className="topbar__item topbar__item--hide-sm">
             <Mail size={14} />
