@@ -14,24 +14,33 @@ function getInitials(name) {
 
 function DoctorCard({ doctor }) {
   return (
-    <Link to={`/doctors#${doctor.id}`} id={doctor.id} className="doctor-card">
-      <span className="doctor-card__avatar" aria-hidden="true">
-        {getInitials(doctor.name)}
-      </span>
-      <span className="doctor-card__name">{doctor.name}</span>
-      <span className="doctor-card__speciality">{doctor.speciality}</span>
-      <span className="doctor-card__experience">{doctor.experience}</span>
-      <a
-        href={`tel:${doctor.phone.replace(/\s/g, '')}`}
-        className="doctor-card__phone"
-        aria-label={`Call ${doctor.phone}`}
-        style ={{fontSize :'0.8rem'}}
-      >
-        <span className="doctor-card__phone-icon">📞</span>
-        <span >{doctor.phone}</span>
-      </a>
-
-    </Link>
+    <div id={doctor.id} className="doctor-card">
+      <Link to={`/doctors#${doctor.id}`} className="doctor-card__link">
+        <span className="doctor-card__media">
+          {doctor.image ? (
+            <img src={doctor.image} alt={`${doctor.name}, ${doctor.speciality}`} loading="lazy" />
+          ) : (
+            <span className="doctor-card__initials" aria-hidden="true">
+              {getInitials(doctor.name)}
+            </span>
+          )}
+        </span>
+        <span className="doctor-card__body">
+          <span className="doctor-card__name">{doctor.name}</span>
+          <span className="doctor-card__speciality">{doctor.speciality}</span>
+        </span>
+      </Link>
+      {doctor.phone && (
+        <a
+          href={`tel:${doctor.phone.replace(/\s/g, '')}`}
+          className="doctor-card__phone"
+          aria-label={`Call ${doctor.phone}`}
+        >
+          <span className="doctor-card__phone-icon">📞</span>
+          <span>{doctor.phone}</span>
+        </a>
+      )}
+    </div>
   )
 }
 
