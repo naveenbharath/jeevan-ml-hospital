@@ -18,9 +18,9 @@ function Doctors() {
   return (
     <>
       <SEO
-        title="Our Doctors | Orthopedic & Gynaecology Specialists in Thanjavur"
-        description="Meet the experienced orthopedic surgeons and gynaecologists at Jeevan Multispeciality Hospital, serving Thanjavur, Tanjore and Mayiladuthurai with board-certified specialist care."
-        keywords="Doctors in Thanjavur, Orthopedic doctors Thanjavur, Gynaecologist in Tanjore, Jeevan Hospital doctors"
+        title="Dr. Dhanpal Singh & Dr. Chandra | Orthopedic & Gynaecology Specialists in Thanjavur"
+        description="Meet Dr. Dhanpal Singh (Orthopaedic Surgeon) and Dr. Chandra (Gynaecologist) at Jeevan Multispeciality Hospital, serving Thanjavur, Tanjore and Mayiladuthurai with board-certified specialist care."
+        keywords="Dr. Dhanpal Singh, Dr. Chandra, Doctors in Thanjavur, Orthopedic doctors Thanjavur, Gynaecologist in Tanjore, Jeevan Hospital doctors"
       />
       <PageHero
         title="Our Doctors"

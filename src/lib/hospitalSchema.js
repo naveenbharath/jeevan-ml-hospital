@@ -1,5 +1,6 @@
 import { SITE_URL, SITE_NAME, ORG } from '../config/seo.js'
 import { departments } from '../data/departments.js'
+import { doctors } from '../data/doctors.js'
 
 export function getHospitalSchema() {
   return {
@@ -48,6 +49,13 @@ export function getHospitalSchema() {
       '@type': 'MedicalSpecialty',
       name: dept.name,
       description: dept.description,
+    })),
+    employee: doctors.map((doctor) => ({
+      '@type': 'Physician',
+      name: doctor.name,
+      jobTitle: doctor.speciality,
+      telephone: doctor.phone,
+      medicalSpecialty: doctor.speciality,
     })),
     areaServed: [
       { '@type': 'City', name: 'Thanjavur' },

@@ -1,18 +1,19 @@
 export const doctors = [
   {
-    id: 'ramesh-babu',
-    name: 'Dr. Ramesh Babu',
+    id: 'dhanpal-singh',
+    name: 'Dr. Dhanpal Singh',
     specialityId: 'orthopaedics',
     speciality: 'Orthopaedic Surgeon',
     experience: '18+ Years Experience',
-    phone: '+91 87781 87693'
+    phone: '+91 93806 10158',
   },
   {
-    id: 'anitha-sharma',
-    name: 'Dr. Anitha Sharma',
+    id: 'chandra',
+    name: 'Dr. Chandra',
     specialityId: 'gynaecology',
     speciality: 'Gynaecologist',
     experience: '14+ Years Experience',
-    phone: '+91 93806 10158'
+    phone: '+91 87781 87693',
+    image: '/chandradr.jpeg',
   },
 ]

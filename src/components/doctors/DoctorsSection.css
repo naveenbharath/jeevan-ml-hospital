@@ -6,7 +6,7 @@
 }
 
 .doctors-section__grid > * {
-  flex: 0 1 220px;
+  flex: 0 1 260px;
 }
 
 @media (max-width: 480px) {
