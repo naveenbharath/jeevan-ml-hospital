@@ -9,13 +9,13 @@ function Departments() {
   return (
     <>
       <SEO
-        title="Orthopaedics & Gynaecology Departments | Jeevan Multispeciality Hospital Thanjavur"
-        description="Explore the Orthopaedics and Gynaecology departments at Jeevan Multispeciality Hospital. Expert orthopedic surgeons and gynaecologists serving Thanjavur, Tanjore and Mayiladuthurai."
-        keywords="Orthopedic Hospital in Thanjavur, Gynaecology Hospital Tanjore, Multispeciality Hospital in Tanjore, Jeevan Hospital departments"
+        title="Orthopaedics & Gynaecology Departments | Jeevan Multispeciality Hospital Mayiladuthurai"
+        description="Explore the Orthopaedics and Gynaecology departments at Jeevan Multispeciality Hospital. Expert orthopedic surgeons and gynaecologists serving Mayiladuthurai."
+        keywords="Orthopedic Hospital in Mayiladuthurai, Gynaecology Hospital Mayiladuthurai, Multispeciality Hospital in Mayiladuthurai, Jeevan Hospital departments"
       />
       <PageHero
         title="Our Departments"
-        description="Comprehensive, specialised care across every major medical discipline for patients in Thanjavur, Tanjore and Mayiladuthurai — all under one roof."
+        description="Comprehensive, specialised care across every major medical discipline for patients in Mayiladuthurai — all under one roof."
       />
 
       <section className="section">

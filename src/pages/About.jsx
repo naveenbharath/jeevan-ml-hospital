@@ -16,13 +16,13 @@ function About() {
   return (
     <>
       <SEO
-        title="About Jeevan Multispeciality Hospital - Trusted Healthcare in Thanjavur"
-        description="Learn about Jeevan Multispeciality Hospital, a trusted multispeciality and general hospital serving Thanjavur (Tanjore), Mayiladuthurai and Tamil Nadu with compassionate, advanced healthcare."
-        keywords="About Jeevan Multispeciality Hospital, Best Hospital in Thanjavur, General Hospital in Thanjavur, Trusted Hospital in Tanjore"
+        title="About Jeevan Multispeciality Hospital - Trusted Healthcare in Mayiladuthurai"
+        description="Learn about Jeevan Multispeciality Hospital, a trusted multispeciality and general hospital serving Mayiladuthurai and Tamil Nadu with compassionate, advanced healthcare."
+        keywords="About Jeevan Multispeciality Hospital, Best Hospital in Mayiladuthurai, General Hospital in Mayiladuthurai, Trusted Hospital in Mayiladuthurai"
       />
       <PageHero
         title="About Us"
-        description="Two decades of compassionate, advanced and patient-first healthcare, proudly serving Thanjavur (Tanjore) and the wider Tamil Nadu region."
+        description="Two decades of compassionate, advanced and patient-first healthcare, proudly serving Mayiladuthurai and the wider Tamil Nadu region."
       />
 
       <section className="section about-story">
@@ -39,7 +39,7 @@ function About() {
             <p>
               Today, our team of experienced specialists, modern infrastructure and round-the-clock
               emergency care make us one of the most trusted general and multispeciality hospitals
-              serving Thanjavur, Tanjore, Mayiladuthurai and the wider Tamil Nadu region.
+              serving Mayiladuthurai and the wider Tamil Nadu region.
             </p>
           </div>
           <div className="about-story__stats">

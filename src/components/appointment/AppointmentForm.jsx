@@ -1,9 +1,16 @@
 import { useState } from 'react'
-import { User, Phone, Stethoscope, Calendar, Clock, ArrowRight } from 'lucide-react'
+import { User, Phone, Stethoscope, Calendar, Clock, ArrowRight, MessageCircle } from 'lucide-react'
 import Button from '../common/Button.jsx'
 import { departments } from '../../data/departments.js'
+import { topBarLinks } from '../../data/navLinks.js'
+import { buildWhatsAppLink } from '../../lib/whatsapp.js'
 import './AppointmentForm.css'
 
+const TIME_LABELS = {
+  morning: 'Morning (9 AM - 12 PM)',
+  afternoon: 'Afternoon (12 PM - 4 PM)',
+  evening: 'Evening (4 PM - 8 PM)',
+}
 
 const initialState = {
   name: '',
@@ -11,6 +18,18 @@ const initialState = {
   department: '',
   date: '',
   time: '',
+}
+
+function buildEnquiryMessage(form) {
+  const departmentName = departments.find((dept) => dept.id === form.department)?.name ?? form.department
+  return [
+    'New appointment enquiry — Jeevan Multispeciality Hospital',
+    `Name: ${form.name}`,
+    `Phone: ${form.phone}`,
+    `Department: ${departmentName}`,
+    `Preferred date: ${form.date}`,
+    `Preferred time: ${TIME_LABELS[form.time] ?? form.time}`,
+  ].join('\n')
 }
 
 function AppointmentForm({ layout = 'stacked' }) {
@@ -29,10 +48,15 @@ function AppointmentForm({ layout = 'stacked' }) {
   }
 
   if (submitted) {
+    const whatsappLink = buildWhatsAppLink(topBarLinks.whatsapp, buildEnquiryMessage(form))
+
     return (
       <div className={`appointment-form appointment-form--${layout} appointment-form--success`}>
         <h3>Thank you, {form.name.split(' ')[0] || 'there'}!</h3>
         <p>Your appointment request has been received. Our team will call you shortly to confirm.</p>
+        <Button href={whatsappLink} target="_blank" rel="noreferrer" variant="accent" icon={<MessageCircle size={18} />}>
+          Message us on WhatsApp
+        </Button>
         <Button variant="primary" onClick={() => { setForm(initialState); setSubmitted(false) }}>
           Book Another Appointment
         </Button>

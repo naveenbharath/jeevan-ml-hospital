@@ -30,7 +30,7 @@ function DepartmentCard({ department, compact = false }) {
         <span className="department-card__media">
           <img
             src={department.image}
-            alt={`${department.name} department at Jeevan Multispeciality Hospital, Thanjavur`}
+            alt={`${department.name} department at Jeevan Multispeciality Hospital, Mayiladuthurai`}
             loading="lazy"
           />
         </span>

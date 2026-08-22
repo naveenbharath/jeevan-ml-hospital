@@ -11,9 +11,9 @@ function Services() {
   return (
     <>
       <SEO
-        title="Medical Services | Jeevan Multispeciality Hospital Thanjavur"
-        description="24 hours emergency care, diagnostics, pharmacy, ICU and health checkups — explore healthcare services in Thanjavur at Jeevan Multispeciality Hospital, Tamil Nadu."
-        keywords="Emergency Hospital in Thanjavur, 24 Hours Hospital in Thanjavur, Healthcare Services in Thanjavur, General Hospital in Thanjavur"
+        title="Medical Services | Jeevan Multispeciality Hospital Mayiladuthurai"
+        description="24 hours emergency care, diagnostics, pharmacy, ICU and health checkups — explore healthcare services in Mayiladuthurai at Jeevan Multispeciality Hospital, Tamil Nadu."
+        keywords="Emergency Hospital in Mayiladuthurai, 24 Hours Hospital in Mayiladuthurai, Healthcare Services in Mayiladuthurai, General Hospital in Mayiladuthurai"
       />
       <PageHero
         title="Our Services"

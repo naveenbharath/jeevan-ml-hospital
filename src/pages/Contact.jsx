@@ -16,13 +16,13 @@ function Contact() {
   return (
     <>
       <SEO
-        title="Contact Us | Jeevan Multispeciality Hospital Thanjavur, Tamil Nadu"
-        description="Get in touch with Jeevan Multispeciality Hospital, serving Thanjavur (Tanjore) and Mayiladuthurai. Call our 24 hours emergency line, find directions, or book an appointment online."
-        keywords="Contact Jeevan Hospital, Hospital in Thanjavur address, Jeevan Multispeciality Hospital phone number, Emergency Hospital in Thanjavur"
+        title="Contact Us | Jeevan Multispeciality Hospital Mayiladuthurai, Tamil Nadu"
+        description="Get in touch with Jeevan Multispeciality Hospital, Mayiladuthurai. Call our 24 hours emergency line, find directions, or book an appointment online."
+        keywords="Contact Jeevan Hospital, Hospital in Mayiladuthurai address, Jeevan Multispeciality Hospital phone number, Emergency Hospital in Mayiladuthurai"
       />
       <PageHero
         title="Contact Us"
-        description="We're here to help patients across Thanjavur, Tanjore and Mayiladuthurai. Reach out or book an appointment with our specialists."
+        description="We're here to help patients across Mayiladuthurai. Reach out or book an appointment with our specialists."
       />
 
       <section id="emergency" className="section">
