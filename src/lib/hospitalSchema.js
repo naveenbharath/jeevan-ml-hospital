@@ -58,7 +58,6 @@ export function getHospitalSchema() {
       medicalSpecialty: doctor.speciality,
     })),
     areaServed: [
-      { '@type': 'City', name: 'Thanjavur' },
       { '@type': 'City', name: 'Mayiladuthurai' },
       { '@type': 'AdministrativeArea', name: 'Tamil Nadu' },
     ],

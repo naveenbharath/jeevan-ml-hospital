@@ -13,7 +13,7 @@ function WhyChooseUs() {
           <h2>
             Why Choose
             <br />
-            Jeevan Hospital, Thanjavur?
+            Jeevan Hospital, Mayiladuthurai?
           </h2>
           <PulseDivider />
         </div>
