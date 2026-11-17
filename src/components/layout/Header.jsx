@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin, Menu, X, ChevronDown } from 'lucide-react'
 import Logo from '../common/Logo.jsx'
 import Button from '../common/Button.jsx'
 import { navLinks, topBarLinks } from '../../data/navLinks.js'
+import { doctors } from '../../data/doctors.js'
 import './Header.css'
 
 function Header() {
@@ -20,6 +21,18 @@ function Header() {
     <header className="header">
       <div className="topbar">
         <div className="topbar__inner">
+          {doctors.map((doctor) => (
+            <a
+              key={doctor.id}
+              href={`tel:${doctor.phone.replace(/\s/g, '')}`}
+              className="topbar__item"
+              title={`${doctor.name} (${doctor.speciality})`}
+            >
+              <Phone size={14} />
+              {doctor.phone}
+            </a>
+          ))}
+
           <a href={`tel:${topBarLinks.phone.replace(/\s/g, '')}`} className="topbar__item">
   <Phone size={14} />
    {topBarLinks.phone}

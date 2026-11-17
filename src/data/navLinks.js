@@ -21,7 +21,7 @@ export const topBarLinks = {
   email: 'info@jeevanhospital.com',
   address: 'Sirkali Main Road, Vellalagaram, Senthangudi, Mayiladuthurai-609001',
   // Test number for now — swap for the hospital/doctors' real WhatsApp number later.
-  whatsapp: '917358877078',
+  whatsapp: '917904719847',
 };
 
 export const mapLocation = {
