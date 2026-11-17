@@ -6,6 +6,7 @@ export const doctors = [
     speciality: 'Orthopaedic Surgeon',
     experience: '18+ Years Experience',
     phone: '+91 93806 10158',
+    image: '/dhanapalsingh.jpeg',
   },
   {
     id: 'chandra',

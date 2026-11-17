@@ -42,8 +42,9 @@
   padding: 40px 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .doctors-page__grid > * {
-    flex: 1 1 calc(50% - 24px);
+    flex: 1 1 100%;
+    max-width: 360px;
   }
 }
